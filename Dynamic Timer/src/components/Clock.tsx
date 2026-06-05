@@ -54,7 +54,7 @@ export const Clock: React.FC<ClockProps> = ({
   const dateFontSize = `${size * 0.12}px`;
 
   return (
-    <div className="flex flex-col items-center justify-center bg-slate-950 p-6 rounded-3xl border border-slate-800 shadow-2xl transition-all duration-300">
+    <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-around bg-slate-950 p-6 rounded-3xl border border-slate-800 shadow-2xl transition-all duration-300">
       
       {/* Clickable Dial Area Wrapper */}
       <div 
@@ -89,7 +89,7 @@ export const Clock: React.FC<ClockProps> = ({
       </div>
 
       {/* Synchronized Text Sub-display */}
-      <div className="mt-4 flex flex-col items-center justify-center font-mono">
+      <div className="mt-4 sm:ml-5 flex flex-col items-center justify-center font-mono">
         <span 
           className="font-bold tracking-tight text-slate-200" 
           style={{ fontSize: timeFontSize }}

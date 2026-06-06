@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { SimpleClockHand, ConcentricRingClock, TickMarkClock } from './index';
-import type { ClockProps } from '../types/analogClockTypes'
+import { SimpleClockHand, ConcentricRingClock, TickMarkClock } from '../index';
+import type { ClockProps } from '../../types/analogClockTypes'
 
 export const Clock: React.FC<ClockProps> = ({
   size = 320,

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useClockMath } from '../hooks/useClockMath';
-import type { ClockLayoutProps } from '../types/analogClockTypes'
+import { useClockMath } from '../../hooks/useClockMath';
+import type { ClockLayoutProps } from '../../types/analogClockTypes'
 
 export const SimpleClockHand: React.FC<ClockLayoutProps> = ({ time, size }) => {
   const { secondsDegrees, minutesDegrees, hoursDegrees } = useClockMath(time, size);

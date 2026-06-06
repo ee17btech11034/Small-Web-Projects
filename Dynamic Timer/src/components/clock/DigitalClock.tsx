@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useClockMath } from '../hooks/useClockMath';
-import type { DigitalClockProps } from '../types/analogClockTypes';
+import { useClockMath } from '../../hooks/useClockMath';
+import type { DigitalClockProps } from '../../types/analogClockTypes';
 
 export const DigitalClock: React.FC<DigitalClockProps> = ({ size = 320 }) => {
   const [time, setTime] = useState<Date>(new Date());

@@ -1,11 +1,10 @@
 import { Header, Clock, Timer } from './components'
-import { useClockSystem } from './hooks/useClockSystem';
 
 function App() {
-  const system = useClockSystem(); // <-- Instantiated here for stable rendering metrics
 
   return (
-    <div className="min-h-screen bg-slate-900 flex flex-col items-center pb-12">
+    // <div className="min-h-screen bg-slate-900 flex flex-col items-center pb-12">
+    <div className="min-h-screen flex flex-col items-center pb-12">
       <Header title='Dynamic Timer & Clock'/>
       
       {/* Upper Core Real-Time clocks */}
@@ -14,7 +13,7 @@ function App() {
       </div>
 
       {/* Pass the stable centralized system down as a prop */}
-      <Timer system={system} />
+      <Timer />
     </div>
   )
 }
